@@ -1333,6 +1333,7 @@
                         <button class="terminal-tab" data-terminal="composer">Composer</button>
                         <button class="terminal-tab" data-terminal="phpstan">PHPStan</button>
                         <button class="terminal-tab" data-terminal="pest">Pest</button>
+                        <button class="terminal-tab" data-terminal="phpunit">PHPUnit</button>
                         <button class="terminal-tab" data-terminal="pint">Pint</button>
                         <button class="terminal-tab" data-terminal="rector">Rector</button>
                     </div>
@@ -1745,6 +1746,25 @@ composer run dev <span style="color:#5c6370;"># visit http://localhost:8000</spa
                         { type: 'output', text: '' },
                         { type: 'success', text: '  Tests:    <span class="number">4 passed</span> (<span class="number">12</span> assertions)' },
                         { type: 'output', text: '  Duration: <span class="number">0.06s</span>' },
+                        { type: 'cursor', text: '' }
+                    ]
+                },
+                phpunit: {
+                    name: 'PHPUnit',
+                    desc: 'programmer-oriented testing framework',
+                    url: 'https://phpunit.de/',
+                    lines: [
+                        { type: 'prompt', text: '<span class="dollar">$</span> <span class="cmd">./vendor/bin/phpunit --testdox</span>' },
+                        { type: 'output', text: '' },
+                        { type: 'output', text: '<span class="version">PHPUnit 12.5.4 by Sebastian Bergmann and contributors.</span>' },
+                        { type: 'output', text: '' },
+                        { type: 'success', text: 'Book (Vendor\App\Tests\Unit\Domain\Model\Book)' },
+                        { type: 'success', text: '  <span class="checkmark">✓</span> it can create a book' },
+                        { type: 'success', text: '  <span class="checkmark">✓</span> it can publish a book' },
+                        { type: 'success', text: '  <span class="checkmark">✓</span> it validates required fields' },
+                        { type: 'success', text: '  <span class="checkmark">✓</span> it belongs to an author' },
+                        { type: 'output', text: '' },
+                        { type: 'success', text: 'Tests: 4, Assertions: 12, Skipped: 0' },
                         { type: 'cursor', text: '' }
                     ]
                 },
