@@ -5,14 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Primary Meta Tags -->
-        <title>Why PHP in 2026?</title>
-        <meta name="title" content="Why PHP in 2026? It's Actually Insanely Good Now">
-        <meta name="description" content="PHP is actually insanely good now. TypeScript-level types, no build steps, immutability via readonly, enums, and more. Just write code and deploy.">
-        <meta name="keywords" content="PHP, modern PHP, PHP 8, PHP 8.5, Laravel, Symfony, web development, programming language, type-safe PHP, PHP tutorial, learn PHP, PHP framework, Composer, PHPStan, Pest, readonly, enums">
+        <title>{{ __('welcome.title') }}</title>
+        <meta name="title" content="{{ __('welcome.meta.title') }}">
+        <meta name="description" content="{{ __('welcome.description') }}">
+        <meta name="keywords" content="{{ __('welcome.meta.keywords') }}">
         <meta name="author" content="Nuno Maduro">
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
         <meta name="googlebot" content="index, follow">
-        <meta name="language" content="English">
+        <meta name="language" content="{{ __('welcome.meta.language') }}">
         <meta name="revisit-after" content="7 days">
 
         <!-- Canonical -->
@@ -21,15 +21,15 @@
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://whyphp.dev">
-        <meta property="og:site_name" content="Why PHP">
-        <meta property="og:title" content="Why PHP in 2026? It's Actually Insanely Good Now">
-        <meta property="og:description" content="PHP is actually insanely good now. TypeScript-level types, no build steps, immutability via readonly, enums, and more. Just write code and deploy.">
+        <meta property="og:site_name" content="{{ __('welcome.site_name') }}">
+        <meta property="og:title" content="{{ __('welcome.meta.title') }}">
+        <meta property="og:description" content="{{ __('welcome.description') }}">
         <meta property="og:image" content="https://whyphp.dev/images/og-1200x630.png">
         <meta property="og:image:secure_url" content="https://whyphp.dev/images/og-1200x630.png">
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
-        <meta property="og:image:alt" content="Why PHP in 2026? It's actually insanely good now.">
+        <meta property="og:image:alt" content="{{ __('welcome.og_image_alt') }}">
         <meta property="og:locale" content="en_US">
 
         <!-- Twitter -->
@@ -37,20 +37,20 @@
         <meta name="twitter:site" content="@enunomaduro">
         <meta name="twitter:creator" content="@enunomaduro">
         <meta name="twitter:url" content="https://whyphp.dev">
-        <meta name="twitter:title" content="Why PHP in 2026? It's Actually Insanely Good Now">
-        <meta name="twitter:description" content="PHP is actually insanely good now. TypeScript-level types, no build steps, immutability via readonly, enums, and more. Just write code and deploy.">
+        <meta name="twitter:title" content="{{ __('welcome.meta.title') }}">
+        <meta name="twitter:description" content="{{ __('welcome.description') }}">
         <meta name="twitter:image" content="https://whyphp.dev/images/og-twitter-1200x600.png">
-        <meta name="twitter:image:alt" content="Why PHP in 2026? - PHP is actually good now">
+        <meta name="twitter:image:alt" content="{{ __('welcome.twitter_image_alt') }}">
 
         <!-- Structured Data / JSON-LD -->
         <script type="application/ld+json">
         {
             "@@context": "https://schema.org",
             "@@type": "WebSite",
-            "name": "Why PHP",
-            "alternateName": ["whyphp.dev", "Why PHP in 2026"],
+            "name": "{{ __('welcome.site_name') }}",
+            "alternateName": ["whyphp.dev", "{{ __('welcome.title') }}"],
             "url": "https://whyphp.dev",
-            "description": "PHP is actually insanely good now. TypeScript-level types, no build steps, immutability via readonly, enums, and more.",
+            "description": "{{ __('welcome.description') }}",
             "author": {
                 "@@type": "Person",
                 "name": "Nuno Maduro",
@@ -61,7 +61,7 @@
                 "name": "PHP",
                 "url": "https://php.net"
             },
-            "keywords": "PHP, modern PHP, PHP 8, Laravel, Symfony, web development, readonly, enums, type safety"
+            "keywords": "{{ __('welcome.meta.keywords') }}"
         }
         </script>
         <script type="application/ld+json">
@@ -71,26 +71,26 @@
             "mainEntity": [
                 {
                     "@@type": "Question",
-                    "name": "Why should I use PHP in 2026?",
+                    "name": "{{ __('welcome.faq.question_1') }}",
                     "acceptedAnswer": {
                         "@@type": "Answer",
-                        "text": "PHP is actually insanely good now. TypeScript-level types, no build steps, immutability via readonly, enums, and a type system that rivals TypeScript. Just write code and deploy."
+                        "text": "{{ __('welcome.faq.answer_1') }}"
                     }
                 },
                 {
                     "@@type": "Question",
-                    "name": "Is PHP still relevant?",
+                    "name": "{{ __('welcome.faq.question_2') }}",
                     "acceptedAnswer": {
                         "@@type": "Answer",
-                        "text": "Absolutely. PHP is actually insanely good now. TypeScript-level type safety, Jest-level testing with Pest, and no build steps. Major platforms like WordPress, Facebook, and Wikipedia run on PHP."
+                        "text": "{{ __('welcome.faq.answer_2') }}"
                     }
                 },
                 {
                     "@@type": "Question",
-                    "name": "How do I install PHP?",
+                    "name": "{{ __('welcome.faq.question_3') }}",
                     "acceptedAnswer": {
                         "@@type": "Answer",
-                        "text": "Visit php.new for one-command installation on macOS, Windows, or Linux. Then use Laravel, the most popular PHP framework, to build your first application."
+                        "text": "{{ __('welcome.faq.answer_3') }}"
                     }
                 }
             ]
@@ -100,7 +100,7 @@
         {
             "@@context": "https://schema.org",
             "@@type": "VideoObject",
-            "name": "Why PHP in 2026?",
+            "name": "{{ __('welcome.title') }}",
             "description": "PHP in 2026 is so good. Watch me explain why PHP is actually insanely good now.",
             "thumbnailUrl": "https://img.youtube.com/vi/PLkLhIwVfMk/maxresdefault.jpg",
             "uploadDate": "2024-12-01",
@@ -1222,29 +1222,29 @@
     <body>
         <main class="container">
             <nav class="nav" aria-label="Main navigation">
-                <a href="#ecosystem">Ecosystem</a>
+                <a href="#ecosystem">{{ __('welcome.nav.ecosystem') }}</a>
                 <span class="nav-sep" aria-hidden="true">·</span>
-                <a href="#watch-this">Watch this</a>
+                <a href="#watch-this">{{ __('welcome.nav.watch') }}</a>
                 <span class="nav-sep" aria-hidden="true">·</span>
-                <a href="#start">Start today</a>
+                <a href="#start">{{ __('welcome.nav.start') }}</a>
                 <span class="nav-sep" aria-hidden="true">·</span>
-                <a href="#badge">Badge</a>
+                <a href="#badge">{{ __('welcome.nav.badge') }}</a>
             </nav>
 
             <header>
-                <h1 class="hero-title">Why <span class="highlight">PHP</span> in 2026?</h1>
+                <h1 class="hero-title">{{ __('welcome.hero.title_prefix') }}<span class="highlight">PHP</span>{{ __('welcome.hero.title_suffix') }}</h1>
 
-            <p class="subtitle">It's actually insanely good now.</p>
+            <p class="subtitle">{{ __('welcome.hero.subtitle') }}</p>
 
-            <p class="hero-text-1">PHP has come a long way. Modern PHP has JIT compilation, immutability via <code>readonly</code>, enums, attributes, and a type system that rivals TypeScript.</p>
+            <p class="hero-text-1">{{ __('welcome.hero.description_1') }}</p>
 
-            <p class="hero-text-2">No build steps. No transpilation. No bundling. Just write code and <a href="https://cloud.laravel.com" target="_blank" rel="noopener">deploy</a>. That's the superpower everyone forgot about.</p>
+            <p class="hero-text-2">{{ __('welcome.hero.description_2') }}</p>
 
             <div class="os-selector hero-tabs reveal">
-                <button class="os-tab active" data-hero="value-objects">Value Objects</button>
-                <button class="os-tab" data-hero="api">API</button>
-                <button class="os-tab" data-hero="testing">Testing</button>
-                <button class="os-tab" data-hero="generics">Generics</button>
+                <button class="os-tab active" data-hero="value-objects">{{ __('welcome.hero.tabs.value_objects') }}</button>
+                <button class="os-tab" data-hero="api">{{ __('welcome.hero.tabs.api') }}</button>
+                <button class="os-tab" data-hero="testing">{{ __('welcome.hero.tabs.testing') }}</button>
+                <button class="os-tab" data-hero="generics">{{ __('welcome.hero.tabs.generics') }}</button>
             </div>
 
             <div class="hero-code-container">
@@ -1285,7 +1285,7 @@
             </header>
 
             <div class="trusted-section reveal">
-                <p class="trusted-label">Trusted by thousands of companies around the world</p>
+                <p class="trusted-label">{{ __('welcome.sections.trusted') }}</p>
                 <div class="trusted-logos">
                     <!-- OpenAI -->
                     <svg width="100" height="28" viewBox="0 0 144 40" xmlns="http://www.w3.org/2000/svg"><path d="M44.84 19.23c0 6.54 4.1 11.1 9.78 11.1s9.78-4.56 9.78-11.1-4.1-11.1-9.78-11.1-9.78 4.56-9.78 11.1zm15.82 0c0 4.68-2.49 7.71-6.04 7.71s-6.03-3.03-6.03-7.71 2.49-7.71 6.03-7.71 6.04 3.03 6.04 7.71zM74.96 30.33c4.31 0 6.77-3.72 6.77-8.19s-2.46-8.19-6.77-8.19c-1.99 0-3.46.81-4.42 1.98v-1.68h-3.51v21.15h3.51v-7.05c.97 1.17 2.43 1.98 4.42 1.98zm-4.51-8.64c0-2.97 1.64-4.59 3.81-4.59 2.55 0 3.92 2.04 3.92 5.04s-1.37 5.04-3.92 5.04c-2.17 0-3.81-1.65-3.81-4.56v-.93zM91.24 30.33c3.08 0 5.51-1.65 6.59-4.41l-3.02-1.17c-.47 1.62-1.85 2.52-3.57 2.52-2.26 0-3.84-1.65-4.1-4.35h10.78v-1.2c0-4.32-2.37-7.77-6.82-7.77s-7.32 3.57-7.32 8.19c0 4.86 3.08 8.19 7.46 8.19zm-.18-13.35c2.23 0 3.28 1.5 3.31 3.24h-7.06c.53-2.13 1.93-3.24 3.75-3.24zM100.55 30h3.51v-9.24c0-2.25 1.61-3.45 3.19-3.45 1.93 0 2.69 1.41 2.69 3.36V30h3.52v-10.38c0-3.39-1.93-5.67-5.16-5.67-1.99 0-3.37.93-4.24 1.98v-1.68h-3.51V30zM123.76 8.46l-7.97 21.54h3.72l1.79-4.92h9.08l1.82 4.92h3.78l-7.97-21.54h-4.25zm2.05 4.26l3.34 9h-6.62l3.28-9zM142.01 8.52h-3.75v21.54h3.75V8.52zM36.25 16.37c.89-2.72.58-5.71-.84-8.18-2.13-3.8-6.41-5.76-10.6-4.84-1.86-2.15-4.53-3.37-7.33-3.35-4.28-.01-8.07 2.81-9.39 6.98-2.75.58-5.12 2.34-6.5 4.83-2.15 3.79-1.66 8.57 1.2 11.82-.89 2.72-.58 5.71.84 8.18 2.13 3.8 6.41 5.76 10.6 4.84 1.86 2.15 4.53 3.36 7.33 3.35 4.28.01 8.08-2.81 9.39-6.98 2.75-.58 5.12-2.34 6.51-4.83 2.14-3.79 1.65-8.57-1.21-11.82zm-14.68 21.02c-1.71 0-3.37-.61-4.68-1.74l.23-.13 7.78-4.49c.4-.23.64-.66.64-1.12V18.55l3.29 1.9v9.4c0 4.13-3.27 7.53-7.26 7.54zM5.85 30.51c-.86-1.52-1.17-3.3-.88-5.02l.23.15 7.78 4.6c.39.24.87.24 1.28 0l9.49-5.62v3.9l-7.86 4.65c-3.5 2.07-8.02.79-10.04-2.66zM3.8 13.12c.86-1.52 2.2-2.68 3.81-3.29v9.28c0 .47.24.9.64 1.13l9.49 5.61-3.29 1.94-7.86-4.65c-3.49-2.07-4.69-6.65-2.79-10.02zm27 6.44l-9.49-5.61 3.29-1.94 7.86 4.65c3.5 2.07 4.7 6.66 2.79 10.02-.86 1.52-2.21 2.68-3.82 3.29v-9.29c0-.47-.24-.9-.63-1.12zm3.27-5.04l-.23-.14-7.78-4.6c-.39-.24-.87-.24-1.28 0l-9.49 5.62v-3.9l7.86-4.65c3.5-2.07 8.02-.79 10.04 2.66.85 1.52 1.16 3.3.88 5.01zm-20.56 6.94l-3.29-1.94v-9.4c0-4.14 3.28-7.54 7.27-7.53 1.71 0 3.37.61 4.68 1.74l-.23.13-7.78 4.49c-.4.23-.64.66-.64 1.12l-.01 11.39zm1.79-3.96l4.23-2.5 4.23 2.5v5l-4.23 2.5-4.23-2.5v-5z"/></svg>
@@ -1303,9 +1303,9 @@
             <hr>
 
             <section id="ecosystem" class="reveal">
-                <h2>Ecosystem</h2>
+                <h2>{{ __('welcome.sections.ecosystem.title') }}</h2>
 
-                <p>Modern PHP isn't just better. It's unrecognizable from its past.</p>
+                <p>{{ __('welcome.sections.ecosystem.description') }}</p>
 
                 <div class="terminal-container">
                     <div class="terminal-header">
@@ -1340,7 +1340,7 @@
                     <div class="terminal-info" id="terminal-info">
                         <a href="https://laravel.com" target="_blank" rel="noopener" id="terminal-link">
                             <strong id="terminal-tool-name">Laravel</strong>
-                            <span id="terminal-tool-desc">Rails/Next.js for PHP</span>
+                            <span id="terminal-tool-desc">{{ __('welcome.terminal.laravel.desc') }}</span>
                             <span class="arrow">→</span>
                         </a>
                     </div>
@@ -1350,12 +1350,12 @@
             <hr>
 
             <section id="watch-this" class="reveal">
-                <h2>Ready to see modern PHP?</h2>
+                <h2>{{ __('welcome.sections.watch.title') }}</h2>
 
-                <p>Type-safe. Expressive. Modern. It just works. <strong>Watch me explain it.</strong></p>
+                <p>{{ __('welcome.sections.watch.description') }} <strong>{{ __('welcome.sections.watch.cta') }}</strong></p>
 
                 <div class="video-embed">
-                    <iframe src="https://www.youtube.com/embed/PLkLhIwVfMk" title="Why PHP?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/PLkLhIwVfMk" title="{{ __('welcome.title') }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
 
             </section>
@@ -1363,28 +1363,28 @@
             <hr>
 
             <section id="start" class="reveal">
-                <h2>Start Today</h2>
+                <h2>{{ __('welcome.sections.start.title') }}</h2>
 
-                <p>One command. Zero config. Production-ready.</p>
+                <p>{{ __('welcome.sections.start.description') }}</p>
 
                 <div class="os-selector">
-                    <button class="os-tab active" data-os="mac">macOS</button>
-                    <button class="os-tab" data-os="windows">Windows</button>
-                    <button class="os-tab" data-os="linux">Linux</button>
+                    <button class="os-tab active" data-os="mac">{{ __('welcome.os.mac') }}</button>
+                    <button class="os-tab" data-os="windows">{{ __('welcome.os.windows') }}</button>
+                    <button class="os-tab" data-os="linux">{{ __('welcome.os.linux') }}</button>
                 </div>
 
                 <div class="os-commands" id="os-mac">
                     <div class="command-step">
-                        <span class="step-label">Install PHP</span>
+                        <span class="step-label">{{ __('welcome.sections.start.install_php') }}</span>
                         <div class="code-block">
-                            <button class="copy-btn" data-copy='/bin/bash -c "$(curl -fsSL https://php.new/install/mac)"'>copy</button>
+                            <button class="copy-btn" data-copy='/bin/bash -c "$(curl -fsSL https://php.new/install/mac)"'>{{ __('welcome.share.copy') }}</button>
                             <pre><code>/bin/bash -c "$(curl -fsSL https://php.new/install/mac)"</code></pre>
                         </div>
                     </div>
                     <div class="command-step">
-                        <span class="step-label">Create a Laravel app and run it</span>
+                        <span class="step-label">{{ __('welcome.sections.start.create_app') }}</span>
                         <div class="code-block">
-                            <button class="copy-btn" data-copy="laravel new my-app&#10;cd my-app&#10;composer run dev">copy</button>
+                            <button class="copy-btn" data-copy="laravel new my-app&#10;cd my-app&#10;composer run dev">{{ __('welcome.share.copy') }}</button>
                             <pre><code>laravel new my-app
 cd my-app
 composer run dev <span style="color:#5c6370;"># visit http://localhost:8000</span></code></pre>
@@ -1394,16 +1394,16 @@ composer run dev <span style="color:#5c6370;"># visit http://localhost:8000</spa
 
                 <div class="os-commands hidden" id="os-windows">
                     <div class="command-step">
-                        <span class="step-label">Install PHP</span>
+                        <span class="step-label">{{ __('welcome.sections.start.install_php') }}</span>
                         <div class="code-block">
-                            <button class="copy-btn" data-copy="Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://php.new/install/windows'))">copy</button>
+                            <button class="copy-btn" data-copy="Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://php.new/install/windows'))">{{ __('welcome.share.copy') }}</button>
                             <pre><code>Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://php.new/install/windows'))</code></pre>
                         </div>
                     </div>
                     <div class="command-step">
-                        <span class="step-label">Create a Laravel app and run it</span>
+                        <span class="step-label">{{ __('welcome.sections.start.create_app') }}</span>
                         <div class="code-block">
-                            <button class="copy-btn" data-copy="laravel new my-app&#10;cd my-app&#10;composer run dev">copy</button>
+                            <button class="copy-btn" data-copy="laravel new my-app&#10;cd my-app&#10;composer run dev">{{ __('welcome.share.copy') }}</button>
                             <pre><code>laravel new my-app
 cd my-app
 composer run dev <span style="color:#5c6370;"># visit http://localhost:8000</span></code></pre>
@@ -1413,16 +1413,16 @@ composer run dev <span style="color:#5c6370;"># visit http://localhost:8000</spa
 
                 <div class="os-commands hidden" id="os-linux">
                     <div class="command-step">
-                        <span class="step-label">Install PHP</span>
+                        <span class="step-label">{{ __('welcome.sections.start.install_php') }}</span>
                         <div class="code-block">
-                            <button class="copy-btn" data-copy='/bin/bash -c "$(curl -fsSL https://php.new/install/linux)"'>copy</button>
+                            <button class="copy-btn" data-copy='/bin/bash -c "$(curl -fsSL https://php.new/install/linux)"'>{{ __('welcome.share.copy') }}</button>
                             <pre><code>/bin/bash -c "$(curl -fsSL https://php.new/install/linux)"</code></pre>
                         </div>
                     </div>
                     <div class="command-step">
-                        <span class="step-label">Create a Laravel app and run it</span>
+                        <span class="step-label">{{ __('welcome.sections.start.create_app') }}</span>
                         <div class="code-block">
-                            <button class="copy-btn" data-copy="laravel new my-app&#10;cd my-app&#10;composer run dev">copy</button>
+                            <button class="copy-btn" data-copy="laravel new my-app&#10;cd my-app&#10;composer run dev">{{ __('welcome.share.copy') }}</button>
                             <pre><code>laravel new my-app
 cd my-app
 composer run dev <span style="color:#5c6370;"># visit http://localhost:8000</span></code></pre>
@@ -1434,36 +1434,36 @@ composer run dev <span style="color:#5c6370;"># visit http://localhost:8000</spa
             <hr>
 
             <section id="badge" class="reveal">
-                <h2>Show Your Support</h2>
+                <h2>{{ __('welcome.sections.badge.title') }}</h2>
 
-                <p>Add this badge to your README. Let the mass know.</p>
+                <p>{{ __('welcome.sections.badge.description') }}</p>
 
                 <div class="badge-showcase">
                     <a href="https://whyphp.dev" target="_blank" class="badge-preview" id="badge-preview-img">
-                        <img src="https://img.shields.io/badge/Why_PHP-in_2026-7A86E8?style=flat-square&labelColor=18181b" alt="Why PHP in 2026">
+                        <img src="https://img.shields.io/badge/Why_PHP-in_2026-7A86E8?style=flat-square&labelColor=18181b" alt="{{ __('welcome.title') }}">
                     </a>
                 </div>
 
                 <div class="os-selector">
-                    <button class="os-tab active" data-format="md">Markdown</button>
-                    <button class="os-tab" data-format="html">HTML</button>
+                    <button class="os-tab active" data-format="md">{{ __('welcome.sections.badge.formats.md') }}</button>
+                    <button class="os-tab" data-format="html">{{ __('welcome.sections.badge.formats.html') }}</button>
                 </div>
 
                 <div class="os-selector">
-                    <button class="os-tab active" data-style="flat-square">Flat Square</button>
-                    <button class="os-tab" data-style="flat">Flat</button>
-                    <button class="os-tab" data-style="for-the-badge">For the Badge</button>
+                    <button class="os-tab active" data-style="flat-square">{{ __('welcome.sections.badge.styles.flat_square') }}</button>
+                    <button class="os-tab" data-style="flat">{{ __('welcome.sections.badge.styles.flat') }}</button>
+                    <button class="os-tab" data-style="for-the-badge">{{ __('welcome.sections.badge.styles.for_the_badge') }}</button>
                 </div>
 
                 <div class="code-block">
-                    <button class="copy-btn" id="badge-copy-btn">copy</button>
-                    <pre><code id="badge-code-output">[![Why PHP](https://img.shields.io/badge/Why_PHP-in_2026-7A86E8?style=flat-square&labelColor=18181b)](https://whyphp.dev)</code></pre>
+                    <button class="copy-btn" id="badge-copy-btn">{{ __('welcome.share.copy') }}</button>
+                    <pre><code id="badge-code-output">[![{{ __('welcome.site_name') }}](https://img.shields.io/badge/Why_PHP-in_2026-7A86E8?style=flat-square&labelColor=18181b)](https://whyphp.dev)</code></pre>
                 </div>
             </section>
 
             <footer>
                 <div class="footer-row">
-                    <span>Made by <a href="https://x.com/enunomaduro" target="_blank" rel="noopener">Nuno Maduro</a></span>
+                    <span>{{ __('welcome.footer.made_by') }} <a href="https://x.com/enunomaduro" target="_blank" rel="noopener">Nuno Maduro</a></span>
                     <div class="footer-links">
                         <a href="https://php.net" target="_blank" rel="noopener">php.net</a>
                         <a href="https://thephp.foundation" target="_blank" rel="noopener">PHP Foundation</a>
@@ -1472,35 +1472,35 @@ composer run dev <span style="color:#5c6370;"># visit http://localhost:8000</spa
             </footer>
         </main>
 
-        <a href="https://github.com/nunomaduro/whyphp.dev" target="_blank" rel="noopener" class="floating-cta-left" aria-label="Edit this site on GitHub">
+        <a href="https://github.com/nunomaduro/whyphp.dev" target="_blank" rel="noopener" class="floating-cta-left" aria-label="{{ __('welcome.floating.edit_github') }}">
             <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-            Edit this site
+            {{ __('welcome.floating.edit_site') }}
         </a>
 
         <button class="floating-cta" id="share-btn" aria-label="Share this page">
             <svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg>
-            Spread the word
+            {{ __('welcome.share.title') }}
         </button>
 
         <div class="share-modal-overlay" id="share-modal">
             <div class="share-modal">
-                <h3>Spread the word</h3>
+                <h3>{{ __('welcome.share.title') }}</h3>
                 <div class="share-modal-options">
                     <a href="#" class="share-modal-option" id="modal-share-twitter" target="_blank" rel="noopener">
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                        Twitter / X
+                        {{ __('welcome.share.twitter') }}
                     </a>
                     <a href="#" class="share-modal-option" id="modal-share-bluesky" target="_blank" rel="noopener">
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8z"/></svg>
-                        Bluesky
+                        {{ __('welcome.share.bluesky') }}
                     </a>
                     <a href="#" class="share-modal-option" id="modal-share-linkedin" target="_blank" rel="noopener">
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                        LinkedIn
+                        {{ __('welcome.share.linkedin') }}
                     </a>
                     <button class="share-modal-option" id="modal-share-copy">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-                        Copy link
+                        {{ __('welcome.share.copy_link') }}
                     </button>
                 </div>
             </div>
@@ -1534,8 +1534,8 @@ composer run dev <span style="color:#5c6370;"># visit http://localhost:8000</spa
     public function label(): string
     {
         return match ($this->status) {
-            Status::Draft => 'Working on it',
-            Status::Published => 'Ready to read',
+            Status::Draft => '{{ __('welcome.code.working') }}',
+            Status::Published => '{{ __('welcome.code.ready') }}',
         };
     }
 }`;
@@ -1615,9 +1615,9 @@ composer run dev <span style="color:#5c6370;"># visit http://localhost:8000</spa
                 // Generate code based on format
                 let code;
                 if (currentFormat === 'md') {
-                    code = `[![Why PHP](${imgUrl})](${linkUrl})`;
+                    code = `[![{{ __('welcome.site_name') }}](${imgUrl})](${linkUrl})`;
                 } else {
-                    code = `<a href="${linkUrl}"><img src="${imgUrl}" alt="Why PHP in 2026"></a>`;
+                    code = `<a href="${linkUrl}"><img src="${imgUrl}" alt="{{ __('welcome.title') }}"></a>`;
                 }
 
                 document.getElementById('badge-code-output').textContent = code;
@@ -1646,10 +1646,10 @@ composer run dev <span style="color:#5c6370;"># visit http://localhost:8000</spa
                 btn.addEventListener('click', async () => {
                     const text = btn.dataset.copy;
                     await navigator.clipboard.writeText(text);
-                    btn.textContent = 'copied';
+                    btn.textContent = '{{ __('welcome.share.copied') }}';
                     btn.classList.add('copied');
                     setTimeout(() => {
-                        btn.textContent = 'copy';
+                        btn.textContent = '{{ __('welcome.share.copy') }}';
                         btn.classList.remove('copied');
                     }, 1000);
                 });
@@ -1659,7 +1659,7 @@ composer run dev <span style="color:#5c6370;"># visit http://localhost:8000</spa
             const terminalTools = {
                 laravel: {
                     name: 'Laravel',
-                    desc: 'Rails/Next.js for PHP',
+                    desc: '{{ __('welcome.terminal.laravel.desc') }}',
                     url: 'https://laravel.com',
                     lines: [
                         { type: 'prompt', text: '<span class="dollar">$</span> <span class="cmd">laravel</span> <span class="arg">new myapp</span>' },
@@ -1680,7 +1680,7 @@ composer run dev <span style="color:#5c6370;"># visit http://localhost:8000</spa
                 },
                 symfony: {
                     name: 'Symfony',
-                    desc: 'Build with confidence at any scale',
+                    desc: '{{ __('welcome.terminal.symfony.desc') }}',
                     url: 'https://symfony.com',
                     lines: [
                         { type: 'prompt', text: '<span class="dollar">$</span> <span class="cmd">symfony</span> <span class="arg">new myapp</span>' },
@@ -1696,7 +1696,7 @@ composer run dev <span style="color:#5c6370;"># visit http://localhost:8000</spa
                 },
                 composer: {
                     name: 'Composer',
-                    desc: 'Cargo/npm for PHP',
+                    desc: '{{ __('welcome.terminal.composer.desc') }}',
                     url: 'https://getcomposer.org',
                     lines: [
                         { type: 'prompt', text: '<span class="dollar">$</span> <span class="cmd">composer</span> <span class="arg">require laravel/sanctum</span>' },
@@ -1715,7 +1715,7 @@ composer run dev <span style="color:#5c6370;"># visit http://localhost:8000</spa
                 },
                 phpstan: {
                     name: 'PHPStan',
-                    desc: 'TypeScript-like type safety',
+                    desc: '{{ __('welcome.terminal.phpstan.desc') }}',
                     url: 'https://phpstan.org',
                     lines: [
                         { type: 'prompt', text: '<span class="dollar">$</span> <span class="cmd">./vendor/bin/phpstan</span> <span class="arg">analyse</span>' },
@@ -1732,7 +1732,7 @@ composer run dev <span style="color:#5c6370;"># visit http://localhost:8000</spa
                 },
                 pest: {
                     name: 'Pest',
-                    desc: 'Jest-style testing',
+                    desc: '{{ __('welcome.terminal.pest.desc') }}',
                     url: 'https://pestphp.com',
                     lines: [
                         { type: 'prompt', text: '<span class="dollar">$</span> <span class="cmd">./vendor/bin/pest</span>' },
@@ -1751,7 +1751,7 @@ composer run dev <span style="color:#5c6370;"># visit http://localhost:8000</spa
                 },
                 phpunit: {
                     name: 'PHPUnit',
-                    desc: 'programmer-oriented testing framework',
+                    desc: '{{ __('welcome.terminal.phpunit.desc') }}',
                     url: 'https://phpunit.de/',
                     lines: [
                         { type: 'prompt', text: '<span class="dollar">$</span> <span class="cmd">./vendor/bin/phpunit --testdox</span>' },
@@ -1770,7 +1770,7 @@ composer run dev <span style="color:#5c6370;"># visit http://localhost:8000</spa
                 },
                 pint: {
                     name: 'Pint',
-                    desc: 'Code style fixer',
+                    desc: '{{ __('welcome.terminal.pint.desc') }}',
                     url: 'https://laravel.com/docs/pint',
                     lines: [
                         { type: 'prompt', text: '<span class="dollar">$</span> <span class="cmd">./vendor/bin/pint</span>' },
@@ -1787,7 +1787,7 @@ composer run dev <span style="color:#5c6370;"># visit http://localhost:8000</spa
                 },
                 rector: {
                     name: 'Rector',
-                    desc: 'Automated refactoring',
+                    desc: '{{ __('welcome.terminal.rector.desc') }}',
                     url: 'https://getrector.com',
                     lines: [
                         { type: 'prompt', text: '<span class="dollar">$</span> <span class="cmd">./vendor/bin/rector</span> <span class="arg">--dry-run</span>' },
@@ -1842,7 +1842,7 @@ composer run dev <span style="color:#5c6370;"># visit http://localhost:8000</spa
             // ===== SHARE MODAL =====
             const shareModal = document.getElementById('share-modal');
             const shareBtn = document.getElementById('share-btn');
-            const modalShareText = 'Why PHP in 2026? TypeScript-level types, no build steps, immutability by default via readonly, enums, and more.';
+            const modalShareText = '{{ __('welcome.meta.title') }} {{ __('welcome.description') }}';
             const modalShareUrl = 'https://whyphp.dev';
 
             // Set share links
@@ -1872,9 +1872,9 @@ composer run dev <span style="color:#5c6370;"># visit http://localhost:8000</spa
             document.getElementById('modal-share-copy').addEventListener('click', async () => {
                 await navigator.clipboard.writeText(modalShareUrl);
                 const btn = document.getElementById('modal-share-copy');
-                btn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Copied!';
+                btn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> {{ __('welcome.share.copied') }}';
                 setTimeout(() => {
-                    btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg> Copy link';
+                    btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg> {{ __('welcome.share.copy_link') }}';
                     shareModal.classList.remove('active');
                 }, 1500);
             });
